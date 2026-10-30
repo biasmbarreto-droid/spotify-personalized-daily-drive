@@ -57,7 +57,7 @@ class Settings:
     spotify_redirect_uri: str | None = os.getenv("SPOTIFY_REDIRECT_URI")
     spotify_scope: str = (
         "playlist-modify-public playlist-modify-private "
-        "user-library-read user-top-read ugc-image-upload"
+        "user-library-read user-top-read ugc-image-upload playlist-read-private playlist-read-collaborative"
     )
     daily_drive_tracks_after_welcome: int = _get_env_int(
         "DAILY_DRIVE_TRACKS_AFTER_WELCOME",
